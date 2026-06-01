@@ -6,6 +6,10 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>hoi!</h1>
+
+    <nav>
+        <img src="https://www.generationsforpeace.org/en/how-we-work/publications/empty/" alt="logo" class="logo">
+    </nav>
+
 </body>
 </html>
