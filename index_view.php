@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav>
-        <img src="https://www.generationsforpeace.org/en/how-we-work/publications/empty/" alt="logo" class="logo">
+        <img src="./src/filler.jpg" alt="logo" class="logo">
     </nav>
 
 </body>
