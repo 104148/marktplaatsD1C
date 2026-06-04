@@ -9,7 +9,7 @@
 <body>
 
     <nav>
-        <img src="./src/filler.jpg" alt="logo" class="logo">
+        <?= $filler ?>
     </nav>
 
 </body>
