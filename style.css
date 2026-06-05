@@ -1,13 +1,73 @@
-body{
-    margin: 0%;
+body {
+    margin: 0; /* Changed 0% to 0, standard practice for zero values */
 }
 
-.nav{
+.nav {
     position: sticky;
+    top: 0; /* Sticky needs a top, bottom, left, or right value to work */
 }
 
-.container{
-background: black;
-width: 100%;
-height: 100vh;
+/* Container instellingen voor het Grid */
+.container {
+    background-color: #f4eee8; /* De lichte achtergrondkleur uit de afbeelding */
+    width: 100%;
+    min-height: 80vh; /* Flexibele hoogte in plaats van vaste 100vh */
+    padding: 20px;
+    gap: 20px; /* Ruimte tussen de kaarten */
+
+    display: grid;
+    /* 3 gelijke kolommen links + 2 kolommen breedte voor het grote rechter blok = 5 kolommen */
+    grid-template-columns: repeat(3, 1fr) repeat(2, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
+}
+
+/* Algemene styling voor de grid items */
+.item {
+    background-color: #d1d1d6; /* Standaard grijze kleur van de blokken */
+    border-radius: 4px; /* Subtiele afronding zoals in de foto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: #000;
+    padding: 20px;
+}
+
+/* Specifieke posities per item (overeenkomend met jouw HTML 1 t/m 6) */
+
+.item:nth-child(1) { /* sales korting */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: #d8d8d8;
+}
+
+.item:nth-child(2) { /* Leeg blok naast sales korting */
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    background-color: #e5e5ea;
+}
+
+.item:nth-child(3) { /* info over product */
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    background-color: #b4b4b8;
+}
+
+.item:nth-child(4) { /* Linksonder blok 1 */
+    grid-column: 1 / 2.5; /* Verdeelt de onderste rij netjes in tweeën */
+    grid-row: 3 / 4;
+    background-color: #aeaea3;
+}
+
+.item:nth-child(5) { /* Linksonder blok 2 */
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    background-color: #aeaea3;
+}
+
+.item:nth-child(6) { /* nieuwste product (Grote rechter blok) */
+    grid-column: 4 / 6;
+    grid-row: 1 / 4; /* Strekt zich uit over alle 3 de rijen */
+    background-color: #dbdbdb;
 }
