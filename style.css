@@ -5,3 +5,7 @@ body{
 .nav{
     position: sticky;
 }
+
+.container{
+display: grid;
+}
