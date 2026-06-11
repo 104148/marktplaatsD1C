@@ -8,6 +8,8 @@
     <title>Login</title>
 </head>
 <body>
+
+<form action="login.php"></form>
 <label for="user">Gebruikers naam</label><br>
 <input type="text" id="user" name="user"><br><br>
 
