@@ -71,3 +71,7 @@ body {
     grid-row: 1 / 4; /* Strekt zich uit over alle 3 de rijen */
     background-color: #dbdbdb;
 }
+
+.card-group{
+    padding: 25px;
+}
