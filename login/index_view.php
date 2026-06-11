@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<form action="login.php">
+<form action="login.php" method="post">
     <h1>Login</h1>
 <label for="user">Gebruikersnaam</label><br>
 <input type="text" id="user" name="user"><br><br>
@@ -21,7 +21,7 @@
     <input type="submit" value="Verzenden">
 </form>
 
-<form action="register.php">
+<form action="register.php" method="post">
     <h1>Registreer</h1>
     <label for="user1">Gebruikersnaam</label><br>
     <input type="text" id="user1" name="user1"><br><br>
