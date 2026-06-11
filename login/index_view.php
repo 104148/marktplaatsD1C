@@ -9,12 +9,29 @@
 </head>
 <body>
 
-<form action="login.php"></form>
-<label for="user">Gebruikers naam</label><br>
+<form action="login.php">
+    <h1>Login</h1>
+<label for="user">Gebruikersnaam</label><br>
 <input type="text" id="user" name="user"><br><br>
 
 
+    <label for="password">Wachtwoord:</label><br>
+    <input type="text" id="password" name="password"><br><br>
 
+    <input type="submit" value="Verzenden">
+</form>
+
+<form action="register.php">
+    <h1>Registreer</h1>
+    <label for="user1">Gebruikersnaam</label><br>
+    <input type="text" id="user1" name="user1"><br><br>
+
+
+    <label for="password1">Wachtwoord:</label><br>
+    <input type="text" id="password1" name="password1"><br><br>
+
+    <input type="submit" value="Verzenden">
+</form>
 
 </body>
 </html>
