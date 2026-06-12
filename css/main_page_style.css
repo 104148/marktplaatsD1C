@@ -1,5 +1,6 @@
 body {
     margin: 0; /* Changed 0% to 0, standard practice for zero values */
+    background: red;
 }
 
 .nav {
