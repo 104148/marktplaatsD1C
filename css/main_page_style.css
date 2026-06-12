@@ -1,30 +1,29 @@
 body {
-    margin: 0; /* Changed 0% to 0, standard practice for zero values */
+    margin: 0;
 }
 
 .nav {
     position: sticky;
-    top: 0; /* Sticky needs a top, bottom, left, or right value to work */
+    top: 0;
 }
 
 /* Container instellingen voor het Grid */
 .container {
-    background-color: #f4eee8; /* De lichte achtergrondkleur uit de afbeelding */
+    background-color: #f4eee8;
     width: 100%;
-    min-height: 80vh; /* Flexibele hoogte in plaats van vaste 100vh */
+    min-height: 80vh;
     padding: 20px;
-    gap: 20px; /* Ruimte tussen de kaarten */
+    gap: 20px;
 
     display: grid;
-    /* 3 gelijke kolommen links + 2 kolommen breedte voor het grote rechter blok = 5 kolommen */
-    grid-template-columns: repeat(3, 1fr) repeat(2, 1fr); 
-    grid-template-rows: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr) repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 /* Algemene styling voor de grid items */
 .item {
-    background-color: #d1d1d6; /* Standaard grijze kleur van de blokken */
-    border-radius: 4px; /* Subtiele afronding zoals in de foto */
+    background-color: #d1d1d6;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,44 +33,76 @@ body {
     padding: 20px;
 }
 
-/* Specifieke posities per item (overeenkomend met jouw HTML 1 t/m 6) */
-
-.item:nth-child(1) { /* sales korting */
+/* Specifieke posities per item */
+.item:nth-child(1) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     background-color: #d8d8d8;
 }
 
-.item:nth-child(2) { /* Leeg blok naast sales korting */
+.item:nth-child(2) {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
     background-color: #e5e5ea;
 }
 
-.item:nth-child(3) { /* info over product */
+.item:nth-child(3) {
     grid-column: 1 / 4;
     grid-row: 2 / 3;
     background-color: #b4b4b8;
 }
 
-.item:nth-child(4) { /* Linksonder blok 1 */
-    grid-column: 1 / 2.5; /* Verdeelt de onderste rij netjes in tweeën */
+.item:nth-child(4) {
+    grid-column: 1 / 2.5;
     grid-row: 3 / 4;
     background-color: #aeaea3;
 }
 
-.item:nth-child(5) { /* Linksonder blok 2 */
+.item:nth-child(5) {
     grid-column: 2 / 4;
     grid-row: 3 / 4;
     background-color: #aeaea3;
 }
 
-.item:nth-child(6) { /* nieuwste product (Grote rechter blok) */
+.item:nth-child(6) {
     grid-column: 4 / 6;
-    grid-row: 1 / 4; /* Strekt zich uit over alle 3 de rijen */
+    grid-row: 1 / 4;
     background-color: #dbdbdb;
 }
 
-.card-group{
+.card-group {
     padding: 25px;
+}
+
+/* --- New Animated Full Width Dropdown Styles --- */
+
+/* Removes old hover triggers */
+.dropdown-content {
+    display: none;
+}
+
+/* Forces the dropdown contents to stretch 100% across the navbar container */
+.custom-fullwidth-dropdown .dropdown-menu {
+    left: 0 !important;
+    right: 0 !important;
+    top: 100% !important;
+    transform: none !important;
+    margin-top: 0;
+    border-radius: 0 0 8px 8px;
+    border: none;
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.1);
+
+    /* Animation setup */
+    display: block !important;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px) !important;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+/* Animation trigger when Bootstrap applies the .show class on click */
+.custom-fullwidth-dropdown .dropdown-menu.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0) !important;
 }
