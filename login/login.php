@@ -1,6 +1,7 @@
 <?php
 
 require "dbconfig.php";
+
 // 1. Zorg dat je de ingevoerde gegevens uit het formulier ophaalt
 $input_user = $_POST['user'];
 $input_pass = $_POST['password'];

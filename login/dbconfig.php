@@ -4,7 +4,8 @@
 $db = 'login.sqlite';
 try {
     $conn = new PDO("sqlite:$db");
-    echo 'Connected to database! <br><br>';
+//    echo 'Connected to database! <br><br>';
+    echo "<script>console.log('Connected to database!');</script>";
 } catch (PDOException $e) {
     echo $e->getMessage();
 }
