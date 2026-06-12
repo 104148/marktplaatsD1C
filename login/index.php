@@ -53,3 +53,5 @@ if (isset($_POST["wissel_knop"]) && $_POST["wissel_knop"] === "Registreer") {
 
 
 include 'index_view.php';
+
+//test
