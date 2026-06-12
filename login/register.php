@@ -2,6 +2,7 @@
 require "dbconfig.php";
 
 try {
+    session_start();
     //Haal de gegevens op uit je formulier
     $gebruikersnaam = $_POST['user1'];
     $wachtwoord = $_POST['password1'];
