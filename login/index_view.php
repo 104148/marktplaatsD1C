@@ -16,7 +16,7 @@
 
 
     <label for="password">Wachtwoord:</label><br>
-    <input type="text" id="password" name="password"><br><br>
+    <input type="password" id="password" name="password"><br><br>
 
     <input type="submit" value="Verzenden">
 </form>
@@ -28,7 +28,7 @@
 
 
     <label for="password1">Wachtwoord:</label><br>
-    <input type="text" id="password1" name="password1"><br><br>
+    <input type="password" id="password1" name="password1"><br><br>
 
     <input type="submit" value="Verzenden">
 </form>
