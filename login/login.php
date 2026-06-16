@@ -23,7 +23,7 @@ if ($user && password_verify($input_pass, $user['password'])) {
     // Sla de admin-status direct op in de sessie (het 'paspoort' van de gebruiker)
     $_SESSION['admin'] = $user['admin']; 
 
-    header("Location: ../index.php");
+    header("Location: ../");
     exit;
 } else {
     // FOUT: Gebruiker bestaat niet of wachtwoord is onjuist

@@ -12,7 +12,7 @@ if (ini_get("session.use_cookies")) {
         $params["secure"], $params["httponly"]
     );
 }
-
+$_SESSION['ingelogd'] = false;
 // 3. Vernietig de sessie op de server
 session_destroy();
 

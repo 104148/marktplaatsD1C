@@ -25,8 +25,12 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Dropdown
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
+                    <ul class="dropdown-menu"> 
+                        <li>
+                            <form action="./login/logout.php" class="px-3 py-1">
+                                <input type="submit" class="btn btn-sm btn-danger w-100" value="Logout">
+                            </form>
+                        </li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -41,10 +45,10 @@
                 <div class="dropdown-menu w-100 p-4">
                     <div class="container-fluid">
                         <div class="row g-2 align-items-center">
-
-                        
-                        <div class="col-md-3"><a class="dropdown-item text-center rounded bg-light py-2" href="./<?= $href ?>/"><?= $loginbtn ?></div>
-
+                            
+                            <div class="col-md-3">
+                                <a class="dropdown-item text-center rounded bg-light py-2" href="./<?= $href ?>/"><?= $loginbtn ?></a>
+                            </div>
 
                             <div class="col-md-4"><input class="form-control" type="text" placeholder="Search.."></div>
                             <div class="col-md-2"><a class="btn btn-primary w-100" href="#">Search</a></div>
@@ -111,4 +115,3 @@
 <footer></footer>
 </body>
 </html>
-<a href=""></a>

@@ -2,13 +2,12 @@
 
 session_start();
 
-$loginbtn = "";
-$href = "";
 
-if ($_SESSION["ingelogd"] === true) {
+
+if (!empty ($_SESSION["ingelogd"]) && $_SESSION["ingelogd"] === true) {
     $loginbtn = $_SESSION["user"];
     
-    if ($_SESSION['admin'] != 1) {
+    if ($_SESSION['admin'] == 1) {
         $href = 'admin';
     } else {
             $href = 'account';
@@ -16,7 +15,8 @@ if ($_SESSION["ingelogd"] === true) {
     }
 
 } else {
-$loginbtn = '          ';
+    $href = './login';
+$loginbtn = 'Login';
 }
 include_once("index_view.php");
 
