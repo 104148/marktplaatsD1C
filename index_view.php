@@ -41,8 +41,11 @@
                 <div class="dropdown-menu w-100 p-4">
                     <div class="container-fluid">
                         <div class="row g-2 align-items-center">
-                            <div class="col-md-3"><a class="dropdown-item text-center rounded bg-light py-2" href="./login">Login</a></div>
-                            <div class="col-md-3"><a class="dropdown-item text-center rounded bg-light py-2" href="#">Register</a></div>
+
+                        
+                        <div class="col-md-3"><a class="dropdown-item text-center rounded bg-light py-2" href="./<?= $href ?>/"><?= $loginbtn ?></div>
+
+
                             <div class="col-md-4"><input class="form-control" type="text" placeholder="Search.."></div>
                             <div class="col-md-2"><a class="btn btn-primary w-100" href="#">Search</a></div>
                         </div>
@@ -108,3 +111,4 @@
 <footer></footer>
 </body>
 </html>
+<a href=""></a>
