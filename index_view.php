@@ -64,7 +64,7 @@
 
 <header>
     <div class="text-center">
-        <img class="d-block mx-auto mb-4" src="/src/hero_boat.png" alt="" width="99%" height="auto">
+        <img class="d-block mx-auto mb-4" src="/src/hero_boat.png" alt="" width="70%" height="auto">
         <div class="col-lg-6 mx-auto">
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                 <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Information about this product</button>
