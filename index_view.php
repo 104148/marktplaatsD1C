@@ -4,62 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main_page_style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="../">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact/">About us</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu"> 
-                        <li>
-                            <form action="./login/logout.php" class="px-3 py-1">
-                                <input type="submit" class="btn btn-sm btn-danger w-100" value="Logout">
-                            </form>
-                        </li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <div class="dropdown custom-fullwidth-dropdown position-static">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Menu Options
-                </button>
-                <div class="dropdown-menu w-100 p-4">
-                    <div class="container-fluid">
-                        <div class="row g-2 align-items-center">
-                            
-                            <div class="col-md-3">
-                                <a class="dropdown-item text-center rounded bg-light py-2" href="./<?= $href ?>/"><?= $loginbtn ?></a>
-                            </div>
-
-                            <div class="col-md-4"><input class="form-control" type="text" placeholder="Search.."></div>
-                            <div class="col-md-2"><a class="btn btn-primary w-100" href="#">Search</a></div>
-                        </div>
-                    </div>
-                </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning fs-3 text-uppercase" href="index.html">Marktplaats</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-3">
+                    <li class="nav-item">
+                        <a class="btn btn-outline-warning fw-semibold px-3 py-2 rounded-pill" href="about.html">
+                            <i class="bi bi-info-circle me-1"></i> Over Ons
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-semibold" href="./<?= $href ?>/">
+                            <i class="bi bi-person-circle me-1"></i> <?= $loginbtn ?>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning text-white fw-bold px-3 py-2 rounded-pill shadow-sm" href="#">
+                            <i class="bi bi-plus-circle me-1"></i> Plaats advertentie
+                        </a>
+                    </li>
+                </ul>
             </div>
-
         </div>
-    </div>
-</nav>
+    </nav>
+ 
 
 
 <header>
@@ -75,7 +56,7 @@
 <div>
     <p style="color: white;">d</p>
 </div>
-<div class="container">
+<div class="grid-container">
     <div class="item">1</div>
     <div class="item">2</div>
     <div class="item">3</div>
