@@ -25,7 +25,7 @@
     </table>
 
 <form action="../login/logout.php">
-    <button type="submit" class="">Log uit</button>
+    <button type="submit" class="logout">Log uit</button>
 </form>
 
 </body>
