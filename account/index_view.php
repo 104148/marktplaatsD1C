@@ -7,5 +7,8 @@
 </head>
 <body>
     <h1>Account pagina: <?= $_SESSION['user'] ?></h1>
+    <form action="../login/logout.php">
+    <button type="submit" class="">Log uit</button>
+</form>
 </body>
 </html>

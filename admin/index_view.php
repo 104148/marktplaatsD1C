@@ -23,5 +23,10 @@
         </tr>
         <?php endforeach; ?>
     </table>
+
+<form action="../login/logout.php">
+    <button type="submit" class="">Log uit</button>
+</form>
+
 </body>
 </html>
