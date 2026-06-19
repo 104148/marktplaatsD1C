@@ -7,8 +7,7 @@ body {
     top: 0;
 }
 
-/* Container instellingen voor het Grid */
-.container {
+.grid-container {
     background-color: #f4eee8;
     width: 100%;
     min-height: 80vh;
@@ -20,7 +19,7 @@ body {
     grid-template-rows: repeat(3, 1fr);
 }
 
-/* Algemene styling voor de grid items */
+
 .item {
     background-color: #d1d1d6;
     border-radius: 4px;
@@ -33,7 +32,7 @@ body {
     padding: 20px;
 }
 
-/* Specifieke posities per item */
+
 .item:nth-child(1) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -74,14 +73,11 @@ body {
     padding: 25px;
 }
 
-/* --- New Animated Full Width Dropdown Styles --- */
-
-/* Removes old hover triggers */
 .dropdown-content {
     display: none;
 }
 
-/* Forces the dropdown contents to stretch 100% across the navbar container */
+
 .custom-fullwidth-dropdown .dropdown-menu {
     left: 0 !important;
     right: 0 !important;
@@ -92,7 +88,7 @@ body {
     border: none;
     box-shadow: 0px 15px 30px rgba(0,0,0,0.1);
 
-    /* Animation setup */
+
     display: block !important;
     visibility: hidden;
     opacity: 0;
@@ -100,7 +96,6 @@ body {
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
 }
 
-/* Animation trigger when Bootstrap applies the .show class on click */
 .custom-fullwidth-dropdown .dropdown-menu.show {
     visibility: visible;
     opacity: 1;
