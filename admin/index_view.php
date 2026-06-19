@@ -2,11 +2,12 @@
 <html>
 <head>
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/admin_style.css">
 </head>
 <body>
     <h1>Welkom in het Admin Dashboard</h1>
     
-    <h3>Huidige Invite Code: <?php echo htmlspecialchars($invite_code); ?></h3>
+    <h2>Huidige Invite Code: <?php echo htmlspecialchars($invite_code); ?></h2>
 
     <table border="1">
         <tr>
