@@ -41,43 +41,42 @@
     </nav>
 
     
-      <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
           <div class="card">
-            <img src="../src/filler.jpg" class="card-img-top" alt="...">
+            <img src="../src/kyano.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Kyano</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Ik ben Kyano, 17 jaar en ben dol op back-end van php. voor dit project heb ik mij gespecialiseert op het account managment en login systeem.</p>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img src="../src/filler.jpg" class="card-img-top" alt="...">
+            <img src="../src/brayston.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Brayston</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Ik ben Brayston, 17 jaar en ben een van de back-end devlopers van deze php marktplaats project. Mijn taak was de detail pagina e de posting regelen.</p>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img src="../src/filler.jpg" class="card-img-top" alt="...">
+            <img src="../src/justin.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Justin</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text">Mijn taak is front-end. ik werk vooral met html,js en css. ik bedenk hoe het lay-out uit ziet in team. </p>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img src="../src/filler.jpg" class="card-img-top" alt="...">
+            <img src="../src/gijs.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Gijs</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Ik ben Gijs mulder, ik ben 17 jaar oud en ik was beig met het helpen bedenken van ideeen en het werken aan front end delen zoals de layout van de main page, de over ons en de inlog paginas</p>
             </div>
           </div>
         </div>
-      </div>
 </body>
 </html>
