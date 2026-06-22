@@ -32,7 +32,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-warning text-white fw-bold px-3 py-2 rounded-pill shadow-sm" href="#">
+                        <a class="btn btn-warning text-white fw-bold px-3 py-2 rounded-pill shadow-sm" href="./plaats_advertentie/">
                             <i class="bi bi-plus-circle me-1"></i> Plaats advertentie
                         </a>
                     </li>
@@ -48,7 +48,7 @@
         <img class="d-block mx-auto mb-4" src="/src/hero_boat.png" alt="" width="70%" height="auto">
         <div class="col-lg-6 mx-auto">
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Information about this product</button>
+                <a href="./advertenties/" class="btn btn-primary btn-lg px-4 gap-3">Bekijk alle advertenties</a>
             </div>
         </div>
     </div>
@@ -56,13 +56,53 @@
 <div>
     <p style="color: white;">d</p>
 </div>
+
+<?php if (count($producten) > 0): ?>
+<div class="container my-5">
+    <h2 class="fw-bold mb-4">Recent toegevoegd</h2>
+    <div class="row g-4">
+        <?php foreach ($producten as $product): ?>
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+                <img src="<?= htmlspecialchars($product['photo']) ?>" class="card-img-top" alt="<?= htmlspecialchars($product['title']) ?>" style="height: 220px; object-fit: cover;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold"><?= htmlspecialchars($product['title']) ?></h5>
+                    <p class="card-text text-muted small"><?= htmlspecialchars(substr($product['bio'], 0, 120)) ?><?= strlen($product['bio']) > 120 ? '...' : '' ?></p>
+                    <p class="card-text fw-bold text-warning fs-5 mt-auto">&euro;<?= number_format($product['price'], 2, ',', '.') ?></p>
+                    <p class="card-text"><small class="text-body-secondary">Geplaatst door <?= htmlspecialchars($product['plaatser']) ?></small></p>
+                    <a href="detail/?id=<?= $product['id'] ?>" class="btn btn-outline-warning w-100 mt-2">Bekijk</a>
+                </div>
+            </div>
+        </div>
+        <?php endforeach; ?>
+    </div>
+</div>
+<?php else: ?>
+<div class="container my-5 text-center">
+    <p class="text-muted fs-5">Nog geen advertenties. Wees de eerste!</p>
+</div>
+<?php endif; ?>
+
+<div class="container my-5">
+    <h2 class="fw-bold mb-4">Uitgelichte items</h2>
+</div>
 <div class="grid-container">
-    <div class="item">1</div>
-    <div class="item">2</div>
-    <div class="item">3</div>
-    <div class="item">4</div>
-    <div class="item">5</div>
-    <div class="item">6</div>
+    <?php if (count($grid_producten) > 0): ?>
+        <?php foreach ($grid_producten as $g): ?>
+        <div class="item" style="background-image: url('<?= htmlspecialchars($g['photo']) ?>'); background-size: cover; background-position: center; position: relative;">
+            <a href="detail/?id=<?= $g['id'] ?>" style="position: absolute; inset: 0; display: flex; align-items: flex-end; justify-content: center; text-decoration: none; background: linear-gradient(transparent 60%, rgba(0,0,0,0.7)); color: white; padding: 15px; font-weight: bold; font-size: 1.1rem;">
+                <?= htmlspecialchars($g['title']) ?> - &euro;<?= number_format($g['price'], 2, ',', '.') ?>
+            </a>
+        </div>
+        <?php endforeach; ?>
+    <?php else: ?>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    <?php endif; ?>
 </div>
 
 <div class="card-group">
