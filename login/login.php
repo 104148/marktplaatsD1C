@@ -18,6 +18,7 @@ if ($user && password_verify($input_pass, $user['password'])) {
     // SUCCES: Gebruiker bestaat en wachtwoord is correct
     $_SESSION['ingelogd'] = true;
     $_SESSION['user'] = $user['user'];
+    $_SESSION['user_id'] = $user['id'];
     
     // HET BELANGRIJKSTE: 
     // Sla de admin-status direct op in de sessie (het 'paspoort' van de gebruiker)
