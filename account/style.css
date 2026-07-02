@@ -1,0 +1,24 @@
+.logout {
+    padding: 10px 20px;
+    background-color: #0d6efd; /* Basis is het diepe donkerbruin */
+    color: #fff;
+    cursor: pointer;
+    height: 5.5%;
+    width: auto; /* Flexibeler voor tekst */
+    min-width: 120px;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+    /* Goud verloop dat animmeert bij hover */
+    background-image: linear-gradient(white, white);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%; 
+    padding-bottom: 5px;
+    transition: all 0.5s ease;
+}
+
+.logout:hover {
+    color: black; /* Tekst wordt donkerbruin op de gouden achtergrond */
+    background-size: 100% 100%; 
+} 
