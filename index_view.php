@@ -113,11 +113,13 @@
         </div>
         <?php endforeach; ?>
     <?php else: ?>
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">6</div>
+        <div class="item d-none d-lg-block" >1</div>
+        <div class="item d-none d-lg-block" >2</div>
+        <div class="item d-none d-lg-block"  >3</div>
+        <div class="item d-block" >4</div>
+        <div class="item d-block d-lg-none" >5</div>
+        <div class="item d-none d-lg-block" >6</div>
+        <div class="item d-block d-lg-none" >7</div>
     <?php endif; ?>
 </div>
 

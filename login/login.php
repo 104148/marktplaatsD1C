@@ -28,6 +28,6 @@ if ($user && password_verify($input_pass, $user['password'])) {
     exit;
 } else {
     // FOUT: Gebruiker bestaat niet of wachtwoord is onjuist
-    echo "Gebruikersnaam of wachtwoord is onjuist.";
+    echo "Gebruikersnaam of wachtwoord is onjuist. <a href='./'>terug</a>";
 }
 ?>

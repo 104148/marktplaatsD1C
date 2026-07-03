@@ -37,9 +37,7 @@
  
             <div class="list-group">
                 <a href="#" class="list-group-item list-group-item-action active">Mijn Advertenties</a>
-                <a href="#" class="list-group-item list-group-item-action">Berichten</a>
-                <a href="#" class="list-group-item list-group-item-action">Favorieten</a>
-                <a href="#" class="list-group-item list-group-item-action text-danger">Uitloggen</a>
+                <a href="../login/logout.php" class="list-group-item list-group-item-action text-danger">Uitloggen</a>
             </div>
         </div>
  

@@ -16,12 +16,12 @@ $login = '
 <form action="login.php" method="post">
     <h1>Login</h1>
 <div class="form-floating">
-  <input type="text" class="form-control" placeholder="" name="user" id="user">
+  <input type="text" class="form-control" placeholder="" name="user" id="user" required>
   <label for="user">Gebruikersnaam</label>
 </div><br>
 
 <div class="form-floating">
-  <input type="password" class="form-control wachtwoord-veld" placeholder="" name="password" id="password">
+  <input type="password" class="form-control wachtwoord-veld" placeholder="" name="password" id="password" required>
   <label for="password">Wachtwoord</label>
 </div><br>
 
@@ -36,18 +36,18 @@ $register = '
     <h1>Registreer</h1>
 
     <div class="form-floating">
-  <input type="text" class="form-control" placeholder="" name="user1" id="user">
+  <input type="text" class="form-control" placeholder="" name="user1" id="user" required>
   <label for="user1">Gebruikersnaam</label>
 </div><br>
 
 
 <div class="form-floating">
-  <input type="password" class="form-control wachtwoord-veld" placeholder="" name="password1" id="password1">
+  <input type="password" class="form-control wachtwoord-veld" placeholder="" name="password1" id="password1" required>
   <label for="password1">Wachtwoord</label>
 </div><br>
 
 <div class="form-floating">
-  <input type="password" class="form-control wachtwoord-veld" placeholder="" name="adpassword" id="adpassword">
+  <input type="password" class="form-control wachtwoord-veld" placeholder="" name="adpassword" id="adpassword" required>
   <label for="adpassword">Admin Wachtwoord</label>
 </div><br>
 
