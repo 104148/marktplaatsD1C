@@ -47,13 +47,13 @@
 <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="./src/lambo1.png" class="d-block w-100" alt="...">
+      <img src="./src/lambo1.png" class="d-block w-100 h-50" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="./src/lambo2.jpeg" class="d-block w-100" alt="...">
+      <img src="./src/lambo2.jpeg" class="d-block w-100 h-50" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="./src/lambo3.png" class="d-block w-100" alt="...">
+      <img src="./src/lambo3.png" class="d-block w-100 h-50" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
@@ -117,7 +117,6 @@
         <div class="item">2</div>
         <div class="item">3</div>
         <div class="item">4</div>
-        <div class="item">5</div>
         <div class="item">6</div>
     <?php endif; ?>
 </div>

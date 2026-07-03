@@ -46,7 +46,7 @@ body {
 }
 
 .item:nth-child(4) {
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
     grid-row: 3 / 4;
     background-color: #aeaea3;
 }
