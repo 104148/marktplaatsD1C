@@ -13,7 +13,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top py-3">
         <div class="container">
-            <a class="navbar-brand fw-bold text-warning fs-3 text-uppercase" href="../">Marktplaats</a>
+            <a class="navbar-brand fw-bold text-warning fs-3 text-uppercase" href="./">Marktplaats</a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -44,14 +44,31 @@
 
 
 <header>
-    <div class="text-center">
-        <img class="d-block mx-auto mb-4" src="/src/hero_boat.png" alt="" width="70%" height="auto">
-        <div class="col-lg-6 mx-auto">
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+<div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./src/lambo1.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./src/lambo2.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./src/lambo3.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                 <a href="./advertenties/" class="btn btn-primary btn-lg px-4 gap-3">Bekijk alle advertenties</a>
             </div>
-        </div>
-    </div>
 </header>
 <div>
     <p style="color: white;">d</p>
@@ -105,9 +122,6 @@
     <?php endif; ?>
 </div>
 
-<div class="container"> <footer class="py-3 my-4"> <ul class="nav justify-content-center border-bottom pb-3 mb-3"> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li> </ul> <p class="text-center text-body-secondary">© 2025 Company, Inc</p> </footer> </div>
-
-<section></section>
-<footer></footer>
+<<div class="container"> <footer class="py-3 my-4"> <ul class="nav justify-content-center border-bottom pb-3 mb-3"> <li class="nav-item"><a href="./" class="nav-link px-2 text-body-secondary">Home</a></li> <li class="nav-item"><a href="/plaats_advertentie/" class="nav-link px-2 text-body-secondary">Plaats advertentie</a></li> <li class="nav-item"><a href="/contact/" class="nav-link px-2 text-body-secondary">About us</a></li> </ul> <p class="text-center text-body-secondary">© 2025 Company, Inc</p> </footer> </div>
 </body>
 </html>
